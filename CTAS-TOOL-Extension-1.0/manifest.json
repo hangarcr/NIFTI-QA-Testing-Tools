@@ -1,0 +1,20 @@
+{
+"manifest_version":2,
+"name":"CTAS TOOL",
+"description":"QA SPECIALIST- Author- Jonathan Madrigal",
+"version":"1.0",
+"icons":{
+    "128":"icon.png"
+},
+"background":{
+    "scripts":["background.js"]
+},
+"browser_action":{
+    "default_title":"CTAS TOOL"
+},
+
+"permissions":[ "storage", "tabs","activeTab", "http://*/*", "https://*/*" ]
+
+
+
+}

@@ -1,0 +1,228 @@
+
+   
+html {
+  position: relative;
+  
+  overflow: hidden;
+  
+  
+}
+html:after
+{
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid ;
+  border-width:  70px 70px 0 0;
+  border-color: transparent #0fe72c48  ;
+  right: 0;
+  top: 455px;
+  position: absolute;
+}
+
+   body {
+    
+    background: #151519;
+   }
+   h1 { 
+       color: #429d39; 
+       font-family: 'Lato', sans-serif; 
+       align-self:centered; 
+      
+       font-size: 10px; 
+       font-weight: bold; 
+      }
+
+       .img_titulo{
+        width: 500px; height: 50px;
+      }
+       /*h1:after
+       {
+           content:' ';
+           display:block;
+           border:2px solid #429d39;
+       } */
+       .btn_icon {
+        
+        background-color: #338033; /* Blue background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 6px 8px; /* Some padding */
+        font-size: 8px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        border-radius: 45px;
+        margin-right: 1em;
+      }
+      .btn_icon_rejected {
+        
+        background-color: #803f33; /* Blue background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 6px 8px; /* Some padding */
+        font-size: 8px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        border-radius: 45px;
+        margin-right: 1em;
+      }
+      .btn_icon_rejected:hover {
+        background-color: #c21f13;
+      }
+      /* Darker background on mouse-over */
+      .btn_icon:hover {
+        background-color: #13c216;
+      }
+      
+      h2 { 
+        color: #429d39; 
+        font-family: 'Lato', sans-serif; 
+        align-self:centered; 
+       
+        font-size: 10px; 
+        font-weight: bold; 
+         
+        }
+        
+       
+        
+      
+   button {
+    background: none;
+    color: #ccc;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #338033;
+    font-size: 12px;
+    
+    border-radius: 60px;
+    transition: .6s;
+    overflow: hidden;
+    margin: 12px;
+    display: inline-block;
+    cursor: pointer;
+   }
+  
+   /*button:focus {
+    outline: none;
+   }
+   
+   button:before {
+       content: '';
+       display: block;
+       position: absolute;
+       background: rgba(255,255,255,.5);
+       width: 60px;
+       height: 100%;
+       left: 0;
+       top: 0;
+       opacity: .5;
+       filter: blur(20px);
+       transform: translateX(-130px) skewX(-15deg);
+   }
+   
+   button:after {
+       content: '';
+       display: block;
+       position: absolute;
+       background: rgba(255,255,255,.2);
+       width: 30px;
+       height: 100%;
+       left: 30px;
+       top: 0;
+       opacity: 0;
+       filter: blur(30px);
+       transform: translateX(-100px) scaleX(-15deg);
+   }*/
+   
+   button:hover {
+      background: #338033;
+      /*cursor: pointer;*/
+   }
+   
+   /*button:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+   }*/
+   
+   button:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+   }
+
+
+   .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+
+  /*NAV*/
+
+  .dropbtn {
+    background-color: #338033; /* Blue background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 6px 8px; /* Some padding */
+        font-size: 8px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        border-radius: 45px;
+        margin-right: 1em;
+  }
+  .dropbtn_rejected {
+    background-color: #803f33; /* Blue background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 6px 8px; /* Some padding */
+        font-size: 8px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        border-radius: 45px;
+        margin-right: 1em;
+  }
+    
+  
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #151519;
+    min-width: 160px;
+    bottom: 50px;
+    z-index: 1;
+    border-radius: 23px;
+    
+  }
+  
+  .dropup-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 45px;
+    cursor: pointer;
+    
+  }
+  
+  .dropup-content a:hover {background-color: #303131/*background-color: #2980B9*/}
+  
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  
+  .dropup:hover .dropbtn {
+    background-color: #13c216;
+  }
+  .dropup:hover .dropbtn_rejected {
+    background-color: #c21f13;
+    
+  }
+
+
+  

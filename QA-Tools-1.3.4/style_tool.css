@@ -1,0 +1,377 @@
+
+
+
+
+.checked
+{
+    color: #338033;
+}
+
+input#upload
+{
+    display: none;
+}
+input#upload +label
+{
+    background: none;
+    color: #ccc;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #338033;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin: 12px;
+    margin-right: 0px;
+    margin-left: 120px;
+    padding: 11px;
+
+    
+}
+span#file-name
+{
+    background: none;
+    color: #ccc;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #338033;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    
+    margin-right: 20px;
+    margin-left: 0px;
+    padding: 11px;
+
+    
+}
+input#upload +label:hover {
+    background: #338033;
+    cursor: pointer;
+ }
+   
+   .btn_action {
+    background: none;
+    color: #ccc;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #338033;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin: 12px;
+    margin-right: 20px;
+   }
+  
+
+   
+ .btn_action:focus {
+    outline: none;
+   }
+   
+   .btn_action:before {
+       content: '';
+       display: block;
+       position: absolute;
+       background: rgba(255,255,255,.5);
+       width: 60px;
+       height: 100%;
+       left: 0;
+       top: 0;
+       opacity: .5;
+       filter: blur(20px);
+       transform: translateX(-130px) skewX(-15deg);
+   }
+   
+   .btn_action:after {
+       content: '';
+       display: block;
+       position: absolute;
+       background: rgba(255,255,255,.2);
+       width: 30px;
+       height: 100%;
+       left: 30px;
+       top: 0;
+       opacity: 0;
+       filter: blur(30px);
+       transform: translateX(-100px) scaleX(-15deg);
+   }
+   
+   .btn_action:hover {
+      background: #338033;
+      cursor: pointer;
+   }
+   
+   .btn_action:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+   }
+   
+   .btn_action:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+   }
+   .btn_ctas {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 35px;
+  }
+  .btn_ctas:hover {
+    background: #338033;
+    cursor: pointer;
+ }
+
+   .sheets{
+    background: none;
+    color: #ccc;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #338033;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin: 12px;
+    margin-right: 20px;
+   }
+   .sheets:focus {
+    outline: none;
+   }
+   .sheets:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(20px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.sheets:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) scaleX(-15deg);
+}
+
+.sheets:hover {
+   background: #338033;
+   cursor: pointer;
+}
+
+.sheets:hover:before {
+ transform: translateX(300px) skewX(-15deg);
+ opacity: .6;
+ transition: .7s;
+}
+
+.sheets:hover:after {
+ transform: translateX(300px) skewX(-15deg);
+ opacity: 1;
+ transition: .7s;
+}
+
+progress {
+    border-radius: 2px; 
+    width: 15%;
+    height: 10px;
+    
+    box-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.2 );
+  }
+  progress::-webkit-progress-bar {
+    background-color: black;
+    border-radius: 2px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #338033;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 3px black;
+  }
+  progress::-moz-progress-bar {
+    /* style rules */
+  }
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000000000000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  /* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgba(30,30,30); 
+  margin: auto;
+  padding: 0;
+  border: 1px solid #343434;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #c9302c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  color: white;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: c9302c;
+  color: white;
+}
+.btn{display:inline-block;margin-bottom:0;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;padding:6px 12px;font-size:14px;line-height:1.42857143;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn:active:focus,.btn:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+
+.btn-link{font-weight:400;color:#337ab7;border-radius:0}
+.btn-link,
+.btn-link.active,
+.btn-link:active,
+.btn-link[disabled],fieldset[disabled] 
+.btn-link{background-color:transparent;-webkit-box-shadow:none;box-shadow:none}
+.btn-link,.btn-link:active,.btn-link:focus,.btn-link:hover{border-color:transparent}
+.btn-link:focus,
+.btn-link:hover{color:#23527c;text-decoration:underline;background-color:transparent}
+.btn-link[disabled]:focus,.btn-link[disabled]:hover,fieldset[disabled] 
+.btn-link:focus,fieldset[disabled] 
+.btn-link:hover{color:#777;text-decoration:none}
+
+.btn-danger{color:#fff;background-color:#d9534f;border-color:#d43f3a}
+.btn-danger.focus,
+.btn-danger:focus{color:#fff;background-color:#c9302c;border-color:#761c19}
+.btn-danger:hover{color:#fff;background-color:#c9302c;border-color:#ac2925}
+.btn-danger.active,
+.btn-danger:active,
+.open>.dropdown-toggle.btn-danger{color:#fff;background-color:#c9302c;background-image:none;border-color:#ac2925}
+.btn-danger.active.focus,.btn-danger.active:focus,
+.btn-danger.active:hover,.btn-danger:active.focus,
+.btn-danger:active:focus,.btn-danger:active:hover,.open>.dropdown-toggle.btn-danger.focus,.open>.dropdown-toggle.btn-danger:focus,.open>.dropdown-toggle.btn-danger:hover{color:#fff;background-color:#ac2925;border-color:#761c19}.btn-danger.disabled.focus,.btn-danger.disabled:focus,.btn-danger.disabled:hover,.btn-danger[disabled].focus,.btn-danger[disabled]:focus,.btn-danger[disabled]:hover,fieldset[disabled] .btn-danger.focus,fieldset[disabled] .btn-danger:focus,fieldset[disabled] .btn-danger:hover{background-color:#d9534f;border-color:#d43f3a}
+.btn-danger .badge{color:#d9534f;background-color:#fff}
+
+.btn-primary{color:#fff;background-color:#337ab7;border-color:#2e6da4}
+.btn-primary.focus,
+.btn-primary:focus{color:#fff;background-color:#286090;border-color:#122b40}
+.btn-primary:hover{color:#fff;background-color:#286090;border-color:#204d74}
+.btn-primary.active,
+.btn-primary:active,.open>.dropdown-toggle.btn-primary{color:#fff;background-color:#286090;background-image:none;border-color:#204d74}
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,.open>.dropdown-toggle.btn-primary.focus,.open>.dropdown-toggle.btn-primary:focus,.open>.dropdown-toggle
+.btn-primary:hover{color:#fff;background-color:#204d74;border-color:#122b40}.btn-primary.disabled.focus,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled].focus,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary.focus,fieldset[disabled] .btn-primary:focus,fieldset[disabled] .btn-primary:hover{background-color:#337ab7;border-color:#2e6da4}
+
+body {
+  margin: 0;
+  padding: 2rem;
+}
+
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse; 
+}
+th, td {
+  padding: 0.25rem;
+}
+
+th {
+  background: black;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+body {background-color: #f9f9f9}
+.container {margin-top: 20px;}
+th[draggable] a,
+th[draggable] {cursor: move;}
+th[draggable] a:hover,
+th[draggable] a {display: block; text-decoration: none; color: #333333;}
+.drag {background-color: rgba(0, 0, 0, 0.25); opacity: 0.25}
+.dnd-drag {opacity: 0.25}
+.over {background-color: rgba(0, 0, 255, 0.35);}
+
+
+
+ tr:hover,  tr.selected  {
+  background-color: rgba(30, 65, 71, 0.356)!important;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+
+td {padding: 5px;}
+
+
+

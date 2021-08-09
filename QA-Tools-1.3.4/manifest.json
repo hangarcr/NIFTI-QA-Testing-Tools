@@ -1,0 +1,22 @@
+{
+"manifest_version":2,
+"name":"QA TOOLS",
+"description":"QA SPECIALIST- Author- Jonathan Madrigal",
+"version":"1.3",
+"icons":{
+    "128":"128.png"
+},
+"background":{
+    "scripts":["background.js"]
+},
+"browser_action":{
+    "default_icon":"check.png",
+    "default_title":"QA TOOLS",
+    "default_popup":"menu.html"
+},
+
+"permissions":[ "storage", "tabs","activeTab", "http://*/*", "https://*/*" ]
+
+
+
+}

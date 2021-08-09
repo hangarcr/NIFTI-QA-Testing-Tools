@@ -1,0 +1,27 @@
+Sub Quitar_tachados()
+    Dim cel As Range, i%, z%
+    Dim ws As Worksheet
+    Dim lastRow As Long
+
+    For Each ws In ActiveWorkbook.Worksheets    'loop through all sheets
+        With ws
+            lastRow = .Cells(.Rows.Count, "A").End(xlUp).Row    'get last row with data using Column C
+            For Each cel In .Range("A1:AZ" & lastRow)    'loop through all cells in range
+         z = Len(cel.Value)
+    i = 1
+    While z <> 0
+        If cel.Characters(Start:=i, Length:=1).Font.Strikethrough = True Then
+            cel.Characters(Start:=i, Length:=1).Caption = ""
+            i = i - 1
+        End If
+        i = i + 1
+        z = z - 1
+    Wend
+        cel.Value = Replace(cel.Value, "    ", " ")
+        cel.Value = Replace(cel.Value, "   ", " ")
+        cel.Value = Replace(cel.Value, "  ", " ")
+            Next
+            
+        End With
+    Next ws
+End Sub

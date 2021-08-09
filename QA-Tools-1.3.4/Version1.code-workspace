@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Jonathan/Pagina web"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Extension Chrome"
+	}
+}

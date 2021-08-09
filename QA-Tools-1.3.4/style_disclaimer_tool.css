@@ -1,0 +1,27 @@
+th {
+  background: black;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+body {background-color: #f9f9f9}
+.container {margin-top: 20px;}
+th[draggable] a,
+th[draggable] {cursor: move;}
+th[draggable] a:hover,
+th[draggable] a {display: block; text-decoration: none; color: #333333;}
+.drag {background-color: rgba(0, 0, 0, 0.25); opacity: 0.25}
+.dnd-drag {opacity: 0.25}
+.over {background-color: rgba(0, 0, 255, 0.35);}
+td {padding: 5px;}
+
+ /*tr:hover td {
+  background: rgba(56, 175, 196, 0.719)
+}
+
+
+
+tbody:hover td[rowspan]{
+  background: none !important
+}*/
+
