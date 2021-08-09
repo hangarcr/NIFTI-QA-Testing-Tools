@@ -19,7 +19,7 @@ This extension has been created to test different process on QA-Nissan, these ar
 
 CTAS-TOOL:
 
-1.This text review all CTAS on MYU-scope.
-2.It sends a request to see if CTA status is correct or if it redirect to other page or if it is broken.
+1. This text review all CTAS on MYU-scope.
+2. It sends a request to see if CTA status is correct or if it redirect to other page or if it is broken.
 
 
