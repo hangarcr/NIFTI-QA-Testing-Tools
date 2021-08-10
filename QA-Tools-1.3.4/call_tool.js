@@ -107,7 +107,7 @@ $(function () {
         chrome.tabs.executeScript(null, { file: "open_accordions.js" });
         chrome.tabs.executeScript(null, { file: "draganddrop.table.columns.js" }, function() {
           chrome.tabs.executeScript(null, { file: "Specs_availability.js" });
-          //chrome.tabs.insertCSS(null, {file:"style_tool.css"}); 
+          chrome.tabs.insertCSS(null, {file:"style_tool.css"}); 
           window.close();
         });
            
